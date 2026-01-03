@@ -4,7 +4,16 @@ const heartDisplay = document.getElementById('heart');
 let count = 0;
 for (const icon of heartIcons) {
   icon.addEventListener('click', () => {
-    count++;
+    const heartIcon = icon.querySelector('i');
+    if (heartIcon.classList.contains('fa-regular')) {
+      heartIcon.classList.remove('fa-regular');
+      heartIcon.classList.add('fa-solid');
+      count++;
+    } else {
+      heartIcon.classList.remove('fa-solid');
+      heartIcon.classList.add('fa-regular');
+      count--;
+    }
     heartDisplay.innerText = count;
   });
 }
@@ -15,7 +24,7 @@ let copyCount = 0;
 
 for (const btn of copyBtns) {
   btn.addEventListener('click', function () {
-    const card = btn.closest('.card');
+    const card = btn.closest('.group');
 
     const serviceNmbr = card.querySelector('.service-number');
     const numberText = serviceNmbr.textContent.trim();
@@ -39,6 +48,14 @@ const displayCoins = document.getElementById('coins');
 const clearBtn = document.getElementById('clearBtn');
 let coinCount = 100;
 
+function updateCallHistoryUI() {
+  if (historyDiv.children.length > 1) {
+    const noCallsMessage = historyDiv.querySelector('.text-center');
+    if (noCallsMessage) {
+      noCallsMessage.remove();
+    }
+  }
+}
 for (const btn of callButtons) {
   btn.addEventListener('click', function () {
     if (coinCount < 20) {
@@ -47,8 +64,8 @@ for (const btn of callButtons) {
     }
     coinCount -= 20;
     displayCoins.innerText = coinCount;
-    const card = btn.closest('.card');
-    const name = card.querySelector('.service-name');
+    const card = btn.closest('.group');
+    const name = card.querySelector('h2');
     const number = card.querySelector('.service-number');
     const serviceName = name.textContent.trim();
     const serviceNumber = number.textContent.trim();
@@ -69,10 +86,14 @@ for (const btn of callButtons) {
         </div>
       `;
     historyDiv.append(historyItem);
+    updateCallHistoryUI();
   });
 }
 // clear btn section
 clearBtn.addEventListener('click', function () {
-  historyDiv.innerHTML = "";
-
+  historyDiv.innerHTML = `
+    <div class="text-center text-gray-400 text-sm py-8 italic">
+      No recent calls
+    </div>
+  `;
 })

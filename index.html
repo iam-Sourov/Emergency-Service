@@ -21,11 +21,11 @@
             </div>
             <div class="">
                 <div class="flex md:gap-3 justify-center items-center">
-                    <div class="flex gap-3 justify-center items-center py-3 px-8 bg-[##41ff6b1a] rounded-[50px]">
+                    <div class="flex gap-3 justify-center items-center py-3 px-8 bg-[#41ff6b1a] rounded-[50px]">
                         <span id="heart" class="font-bold">0</span>
                         <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="">
                     </div>
-                    <div class="flex justify-center items-center gap-3 py-3 px-8 bg-[##41ff6b1a] rounded-[50px] ">
+                    <div class="flex justify-center items-center gap-3 py-3 px-8 bg-[#41ff6b1a] rounded-[50px] ">
                         <span id="coins" class="font-bold">100</span>
                         <img class="w-[30px] h-[30px]" src="assets/coin.png" alt="">
                     </div>
@@ -48,316 +48,300 @@
         </div>
     </section>
     <!-- Main -->
-    <section>
-        <!-- Card Section -->
-        <div class="md:flex gap-8 p-2">
-            <div class="md:w-[70%] w-full  mb-6 ">
-                <div class=".card-container grid grid-cols-1 items-stretch  md:grid-cols-3 md:gap-7 gap-7 ">
+    <section class="container mx-auto px-4 py-8 bg-gray-50">
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+            <div class="w-full lg:w-3/4">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-red-50 flex items-center justify-center text-red-500 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-phone-volume"></i>
                             </div>
-                            <div id="heartIcons">
-                                <img src="assets/heart.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">National Emergency Number</h1>
-                                <p class="text-neutral-700">National Emergency</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">999</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">All</p>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
                             </div>
                         </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">National Emergency</h2>
+                            <p class="text-gray-500 text-sm mt-1">General Helpline</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">999</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
                             </button>
                             <button
-                                class="call-btn h-10  text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/police.png" alt="">
-                            </div>
-                            <img id="heartIcons" src="assets/heart.svg" alt="">
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Police Helpline Number</h1>
-                                <p class="text-neutral-700">Police</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">999</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">Police </p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10 text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/fire-service.png" alt="">
-                            </div>
-                            <img id="heartIcons" src="assets/heart.svg" alt="">
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Fire Service Number</h1>
-                                <p class="text-neutral-700">Fire Service</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">999</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">Fire</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10  text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/ambulance.png" alt="">
-                            </div>
-                            <div id="heartIcons">
-                                <img src="assets/heart.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Ambulance Service</h1>
-                                <p class="text-neutral-700">Ambulance</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">1994-999999</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">Health</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10  text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                            </div>
-                            <img id="heartIcons" src="assets/heart.svg" alt="">
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Women & Child Helpline</h1>
-                                <p class="text-neutral-700">Women & Child Helpline</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">109</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">Help </p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10 text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                            </div>
-                            <img id="heartIcons" src="assets/heart.svg" alt="">
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Anti-Corruption Helpline</h1>
-                                <p class="text-neutral-700">Anti-Corruption</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">106</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">Govt.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10  text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                            </div>
-                            <div id="heartIcons">
-                                <img src="assets/heart.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Electricity Helpline</h1>
-                                <p class="text-neutral-700">Electricity Outage</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">16216</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">Electricity</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10  text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4  p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                            </div>
-                            <img id="heartIcons" src="assets/heart.svg" alt="">
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Brac Helpline</h1>
-                                <p class="text-neutral-700">BracBrac</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">16445</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">NGO </p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10 text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                    <div
-                        class="card w-full flex flex-col justify-between border border-neutral-300 rounded-xl shadow-sm  gap-4 p-8">
-                        <div class="flex justify-between">
-                            <div class="w-16 h-16 flex justify-center items-center rounded-2xl bg-[#FFE3E2]">
-                                <img class="w-[32px] h-[32px]" src="assets/emergency.png" alt="">
-                            </div>
-                            <img id="heartIcons" src="assets/heart.svg" alt="">
-                        </div>
-                        <div class="flex gap-2 flex-col ">
-                            <div>
-                                <h1 class="service-name font-bold ">Bangladesh Railway Helpline </h1>
-                                <p class="text-neutral-700">Bangladesh Railway</p>
-                            </div>
-                            <div>
-                                <h1 class="service-number font-bold text-2xl md:text-4xl ">163</h1>
-                                <p class="md:text-lg text-sm text-neutral-700">Travel</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-2 md:justify-center items-center ">
-                            <button class="copy-btn h-10 justify-center items-center border-neutral-500
-                            shadow-sm rounded-lg px-7 py-2 flex gap-2">
-                                <img src="assets/Group.svg" alt="">
-                                Copy
-                            </button>
-                            <button
-                                class="call-btn h-10  text-white justify-center items-center rounded-lg bg-[#00A63E] px-7 py-2 flex gap-2">
-                                <img src="assets/call.svg" alt="">
-                                Call
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- History Section -->
-            <div class="md:w-[30%] w-full border border-neutral-300 rounded-xl shadow-sm p-6">
-                <div class="flex flex-col gap-2">
-                    <div class="flex justify-between items-center p-2 border border-neutral-300 rounded-xl shadow-sm">
-                        <div class="flex gap-2">
-                            <img src="assets/hist.svg" alt="">
-                            <h1>Call History</h1>
-                        </div>
-                        <div
-                            class=" flex justify-center items-center text-white font-semibold gap-2 py-3 px-8 bg-[#00A63E] rounded-[50px] ">
-                            <button id="clearBtn">Clear</button>
-                        </div>
-                    </div>
-                    <div id="callHistory" class="flex flex-col gap-2">
 
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-handcuffs"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Police Helpline</h2>
+                            <p class="text-gray-500 text-sm mt-1">Law Enforcement</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">999</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-orange-50 flex items-center justify-center text-orange-500 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-fire-extinguisher"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Fire Service</h2>
+                            <p class="text-gray-500 text-sm mt-1">Fire & Rescue</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">999</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-truck-medical"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Ambulance</h2>
+                            <p class="text-gray-500 text-sm mt-1">Medical Emergency</p>
+                            <h1 class="service-number text-2xl md:text-3xl font-bold text-[#006747] mt-2 break-all">
+                                1994-999999</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-pink-50 flex items-center justify-center text-pink-500 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-person-breastfeeding"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Women & Child</h2>
+                            <p class="text-gray-500 text-sm mt-1">Support Helpline</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">109</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-gray-100 flex items-center justify-center text-gray-600 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-gavel"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Anti-Corruption</h2>
+                            <p class="text-gray-500 text-sm mt-1">Govt. Complaint</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">106</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-yellow-50 flex items-center justify-center text-yellow-500 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Electricity</h2>
+                            <p class="text-gray-500 text-sm mt-1">Power Outage</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">16216</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-600 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-train"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">BD Railway</h2>
+                            <p class="text-gray-500 text-sm mt-1">Train Info</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">163</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="flex justify-between items-start mb-4">
+                            <div
+                                class="w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center text-indigo-500 text-2xl group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-hand-holding-heart"></i>
+                            </div>
+                            <div id="heartIcons"
+                                class="cursor-pointer opacity-50 hover:opacity-100 hover:text-red-500 transition">
+                                <i class="fa-regular fa-heart text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <h2 class="font-bold text-lg text-gray-800 leading-tight">Brac Helpline</h2>
+                            <p class="text-gray-500 text-sm mt-1">NGO Support</p>
+                            <h1 class="service-number text-4xl font-bold text-[#006747] mt-2">16445</h1>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button
+                                class="copy-btn flex items-center justify-center gap-2 border border-gray-200 text-gray-600 py-2.5 rounded-lg hover:bg-gray-50 transition font-medium text-sm">
+                                <i class="fa-regular fa-copy"></i> Copy
+                            </button>
+                            <button
+                                class="call-btn flex items-center justify-center gap-2 bg-[#00A63E] text-white py-2.5 rounded-lg hover:bg-[#006747] shadow-md hover:shadow-lg transition font-medium text-sm">
+                                <i class="fa-solid fa-phone"></i> Call
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/4">
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-sm sticky top-4">
+                    <div
+                        class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50 rounded-t-2xl">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-8 h-8 rounded-full bg-green-100 text-[#006747] flex items-center justify-center">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <h1 class="font-bold text-gray-800">Call History</h1>
+                        </div>
+                        <button id="clearBtn"
+                            class="text-xs bg-red-50 text-red-500 px-3 py-1.5 rounded-full hover:bg-red-100 transition font-semibold border border-red-100">
+                            Clear All
+                        </button>
+                    </div>
+
+                    <div id="callHistory" class="p-4 flex flex-col gap-2 min-h-[150px] max-h-[80vh] overflow-y-auto">
+                        <div class="text-center text-gray-400 text-sm py-8 italic">
+                            No recent calls
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <script src="script.js"></script>
